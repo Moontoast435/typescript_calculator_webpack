@@ -6,5 +6,5 @@
     "target": "es5",
     "allowJs": true
   },
-  "files": ["src/utils/index.ts", "src/data/data.ts", "src/ui/mainUIBuilder.ts"]
+  "files": ["src/utils/index.ts", "src/data/data.ts", "src/ui/mainUIBuilder.ts", "src/click events/events.ts"]
 }

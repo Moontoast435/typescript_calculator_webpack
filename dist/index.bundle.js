@@ -15,7 +15,7 @@
   \****************************/
 /***/ (() => {
 
-eval("function handleOperation(operation, num1, num2) {\n    switch (operation) {\n        case \"Add\":\n            return num1 + num2;\n            break;\n        case \"Subtract\":\n            return num1 - num2;\n            break;\n        case \"Multiply\":\n            return num1 * num2;\n            break;\n        case \"Divide\":\n            return num1 / num2;\n            break;\n        default:\n            break;\n    }\n}\nconsole.log(handleOperation(\"Multiply\", 2, 5000));\n\n\n//# sourceURL=webpack://webpack-project/./src/utils/index.ts?");
+eval("function handleOperation(operation, num1, num2) {\n    switch (operation) {\n        case \"+\":\n            return num1 + num2;\n            break;\n        case \"-\":\n            return num1 - num2;\n            break;\n        case \"*\":\n            return num1 * num2;\n            break;\n        case \"/\":\n            if (num2 != 0) {\n                return num1 / num2;\n            }\n            return \"Cannot divide by zero!\";\n            break;\n        default:\n            return \"invalid operation\";\n            break;\n    }\n}\n// const num1 = prompt(\"Type the first number\");\n// const operator = prompt(\"Type the operation\");\n// const num2 = prompt(\"Type the second number\");\n// console.log(\"Result: \" + handleOperation(operator, parseFloat(num1), parseFloat(num2)));\n\n\n//# sourceURL=webpack://webpack-project/./src/utils/index.ts?");
 
 /***/ })
 

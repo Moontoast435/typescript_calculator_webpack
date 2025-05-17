@@ -14,7 +14,8 @@ const stylesHandler = MiniCssExtractPlugin.loader;
 const config = {
     entry: {index : './src/utils/index.ts',
         data: './src/data/data.ts',
-        ui: './src/ui/mainUIBuilder.ts'
+        ui: './src/ui/mainUIBuilder.ts',
+        clickevents: './src/click events/events.ts'
     },
     
     output: {

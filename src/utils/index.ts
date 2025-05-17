@@ -1,22 +1,28 @@
-type Operation = 'Add' | 'Subtract' | 'Multiply' | 'Divide'
 
-function handleOperation(operation : Operation, num1 : number, num2 : number) {
+function handleOperation(operation : string, num1 : number, num2 : number) {
     switch (operation) {
-        case "Add":
+        case "+":
             return num1 + num2;
             break;
-        case "Subtract":
+        case "-":
             return num1 - num2
             break;
-        case "Multiply":
+        case "*":
             return num1 * num2;
             break;
-        case "Divide":
+        case "/":
+            if (num2 != 0) {
             return num1 / num2;
+            }
+
+            return "Cannot divide by zero!";
             break;
         default:
+            return "invalid operation"
             break;
     }
 }
-
-console.log(handleOperation("Multiply", 2, 5000));
+// const num1 = prompt("Type the first number");
+// const operator = prompt("Type the operation");
+// const num2 = prompt("Type the second number");
+// console.log("Result: " + handleOperation(operator, parseFloat(num1), parseFloat(num2)));
